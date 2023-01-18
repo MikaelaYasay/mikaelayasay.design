@@ -1,0 +1,27 @@
+/* GLOBAL RESETS */
+* {box-sizing: border-box;}
+
+// VARIABLES
+$color-text-body: #353B3C;
+$color-text-headings: #353B3C;
+$color-white: #EBEBEB;
+
+$font-family-sans: 'elza-narrow', sans-serif;
+$font-family-serif: 'elizeth-condensed', serif;
+
+// BREAKPOINTS
+$breakpoint-small: 768px;
+$breakpoint-medium: 1050px;
+$breakpoint-large: 1250px;
+
+// IMPORTS
+@import "partials/toc"; 
+@import "partials/typography"; 
+@import "partials/helpers"; 
+@import "partials/buttons"; 
+@import "partials/media"; 
+@import "partials/layout";  
+@import "partials/grid"; 
+@import "partials/structure"; 
+@import "partials/sitenav"; 
+@import "partials/animations"; 
