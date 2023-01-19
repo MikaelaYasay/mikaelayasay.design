@@ -2,12 +2,14 @@
 * {box-sizing: border-box;}
 
 // VARIABLES
-$color-text-body: #353B3C;
-$color-text-headings: #353B3C;
-$color-white: #EBEBEB;
+$color-text-body: #353b3c;
+$color-text-headings: #353b3c;
+$color-white: #ebebeb;
+$color-link: #353b3c;
+$color-link-darker: #d2b74e;
 
-$font-family-sans: 'elza-narrow', sans-serif;
-$font-family-serif: 'elizeth-condensed', serif;
+$font-family-sans: 'elza-narrow', sans-serif; 
+$font-family-serif: 'elizeth-condensed', serif; 
 
 // BREAKPOINTS
 $breakpoint-small: 768px;
@@ -15,13 +17,13 @@ $breakpoint-medium: 1050px;
 $breakpoint-large: 1250px;
 
 // IMPORTS
-@import "partials/toc"; 
+@import "partials/toc";
 @import "partials/typography"; 
-@import "partials/helpers"; 
-@import "partials/buttons"; 
-@import "partials/media"; 
-@import "partials/layout";  
+@import "partials/helpers";
+@import "partials/buttons";
+@import "partials/media";  
+@import "partials/layout";   
 @import "partials/grid"; 
 @import "partials/structure"; 
-@import "partials/sitenav"; 
-@import "partials/animations"; 
+// @import "partials/sitenav";   
+// @import "partials/animations";  

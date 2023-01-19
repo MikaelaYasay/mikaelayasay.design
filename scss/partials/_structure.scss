@@ -1,3 +1,8 @@
+/* BODY */ 
+body {
+    background-color: $color-white;
+}
+
 /* SITE STRUCUTURE */ 
 .site-header {
     position: absolute;
@@ -8,7 +13,7 @@
     align-items: center;
     
     a {
-        color: $color-text-body;
+        color: $color-white;
         text-decoration: none;
     }
 
@@ -20,17 +25,25 @@
     .site-id {
         display: flex;
         align-items: center;
+
+        .logo {
+            max-width: 50px;
+        }
     }
 
-    .logo {
-        max-width: 40px;
-        margin-right: .5em;
+    .site-nav {
+        display: flex;
+        align-items: center;
+
+        li {
+            list-style: none;
+        }
     }
 }
 
 /* SITE FOOTER */ 
 .site-footer {
-    background-color: $color-white;
+    background-color: black;
     display: flex;
     padding: 1em;
     justify-content: center;
@@ -50,16 +63,14 @@ section {
 
 /* HERO SECTION */
 .hero {
-    background-color: $color-white;
     color: $color-text-body;
     text-align: center;
-    padding: 6em 0;
     min-height: 100vh;
     display: grid;
     place-items: center;
 
     h1 {
-        color: white;
+        color: $color-text-headings;
         margin-bottom: .25em;
     }
 

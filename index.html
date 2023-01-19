@@ -11,9 +11,6 @@
 
     <!-- MAIN CSS STYLES -->
     <link rel="stylesheet" href="css/style.css">
-
-    <link rel="stylesheet"
-    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 
 <body>
@@ -24,26 +21,92 @@
                     <img src="img/mikaelayasay.design_logo.svg" alt="Placeholder" width="50px" height="50px">
                 </a>
             </div>
-            <div class="site-nav">
-                <ul>
-                    <li><a href="#top">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
         </div>
+        <nav class="site-nav" data-navstate="closed">
+            <h2 class="menu-button">
+                <span class="hide-visually">Menu</span>
+                <svg width="30" height="30"> 
+                    <title>Menu</title>
+                    <rect id="menubar-top" y="0" width="30" height="3"></rect>
+                    <rect id="menubar-middle" y="8" width="30" height="3"></rect>
+                    <rect id="menubar-bottom" y="16" width="30" height="3"></rect>
+                </svg>
+            </h2>
+            <ul>
+                <li><a href="#top">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="container">
-        <div class="hero">
-            <h1>I'm Mikaela Yasay</h1>
-            <p>a <span class="input"></span></p>
+    <main class="site-main">
+        <section class="hero animate-on-scroll row">
+            <div class="one-half">
+                <div>
+                    <div>
+                        <h1>Mikaela Yasay</h1>
+                        <p><span class="input"></span></p>
+                        <div class="button"><a href="#about.html"></a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <button type="button">More About Me</button>
-        </div>
+        <section id="projects" class="animate-on-scroll">
+            <div class="container">
+                <div class="row">
+                    <div class="one-third">
+                        <div class="cont-image">
+                            <img src="https://via.placeholder.com/1600x1200" alt="Avatar" class="image">
+                            <div class="overlay">
+                                <div class="text">Hello World</div>
+                            </div>
+                        </div>
+                    </div>
 
-    </div>
+                    <div class="one-third">
+                        <img src="https://via.placeholder.com/1600x1200" alt="Placeholder">
+                    </div>
+
+                    <div class="one-third">
+                        <img src="https://via.placeholder.com/1600x1200" alt="Placeholder">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="animate-on-scroll">
+            <div class="container">
+                <div class="row">
+                    <div class="one-half">
+                        <img src="https://via.placeholder.com/1600x1200" alt="Placeholder">
+                    </div>
+                    <div class="one-half">
+                        <h3>Header 3</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum nisi assumenda corporis. Magni nisi cupiditate minus tempora voluptatibus consectetur dolores omnis, esse assumenda. Quidem, similique!</p>
+                        <a href="#" class="button">Button</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="animate-on-scroll">
+            <div class="container">
+                <div class="row">
+                    <div class="one-half">
+                        <img src="https://via.placeholder.com/1600x1200" alt="Placeholder">
+                    </div>
+                    <div class="one-half">
+                        <h3>Header 3</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum nisi assumenda corporis. Magni nisi cupiditate minus tempora voluptatibus consectetur dolores omnis, esse assumenda. Quidem, similique!</p>
+                        <a href="#" class="button">Button</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- JS -->
     <script type="text/javascript" src="js/script.js"></script>
@@ -51,9 +114,9 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         var typed = new Typed(".input", {
-            strings:["Web Designer.", "Graphic Designer.", "Illustrator."],
+            strings:["a Web Designer.", "a Graphic Designer.", "an Illustrator."],
             typeSpeed: 70,
-            backSpeed: 80,
+            backSpeed: 60,
             loop: true
         });
     </script>
