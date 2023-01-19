@@ -63,11 +63,17 @@ section {
 
 /* HERO SECTION */
 .hero {
+    margin: 0 1em 0 1em;
+    padding: 0;
     color: $color-text-body;
-    text-align: center;
+    text-align: left;
     min-height: 100vh;
     display: grid;
-    place-items: center;
+    place-items: left;
+
+    .button {
+        align-items: left;
+    }
 
     h1 {
         color: $color-text-headings;
@@ -75,6 +81,6 @@ section {
     }
 
     p {
-        margin: 1em auto;
+        text-align: left;
     }
 }

@@ -49,6 +49,17 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.2em;
 }
 
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.title .i-am {
+  margin-right: 0.5em;
+  font-family: "elza-narrow", sans-serif;
+  font-weight: 400;
+}
+
 /* BASE TYPOGRAPHY */
 body {
   font-size: 100%;
@@ -142,6 +153,7 @@ hr {
 
 /* BUTTONS */
 .button {
+  margin-top: 5em;
   cursor: pointer;
   display: inline-block;
   background-color: #353b3c;
@@ -151,7 +163,6 @@ hr {
   text-decoration: none;
   padding: 1em;
   border-radius: 20em;
-  margin: 1em 0.5em 1em 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -160,6 +171,7 @@ hr {
   text-decoration: none;
 }
 .button:hover {
+  color: #353b3c;
   background-color: #d2b74e;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
@@ -178,46 +190,12 @@ img {
   height: auto;
 }
 
-/* HOME PROJECTS IMAGES */
-.cont-image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.cont-image:hover .overlay {
-  height: 100%;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(53, 59, 60, 0.1215686275);
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-}
-
-.text {
-  color: #ebebeb;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+.hero-img {
+  background-image: url("/img/Hero-img.jpg");
+  z-index: 9999;
+  background-size: 700px;
+  background-repeat: no-repeat;
+  background-position: right 0 bottom 0;
 }
 
 /* RESET BODY */
@@ -416,17 +394,24 @@ section {
 
 /* HERO SECTION */
 .hero {
+  margin: 0 1em 0 1em;
+  padding: 0;
   color: #353b3c;
-  text-align: center;
+  text-align: left;
   min-height: 100vh;
   display: -ms-grid;
   display: grid;
-  place-items: center;
+  place-items: left;
+}
+.hero .button {
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
 }
 .hero h1 {
   color: #353b3c;
   margin-bottom: 0.25em;
 }
 .hero p {
-  margin: 1em auto;
+  text-align: left;
 }
