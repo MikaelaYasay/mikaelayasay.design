@@ -165,7 +165,7 @@ hr {
   background-color: #353b3c;
   width: 150px;
   text-align: center;
-  color: #ebebeb;
+  color: #FFFAFA;
   text-decoration: none;
   padding: 1em;
   border-radius: 20em;
@@ -173,7 +173,7 @@ hr {
   transition: all 0.4s;
 }
 .button a {
-  color: #ebebeb;
+  color: #FFFAFA;
   text-decoration: none;
 }
 .button:hover {
@@ -323,7 +323,7 @@ body {
 
 /* BODY */
 body {
-  background-color: #ebebeb;
+  background-color: #FFFAFA;
 }
 
 /* SITE STRUCUTURE */
@@ -342,7 +342,7 @@ body {
           align-items: center;
 }
 .site-header a {
-  color: #ebebeb;
+  color: #FFFAFA;
   text-decoration: none;
 }
 .site-header h1 {
@@ -447,7 +447,7 @@ section {
   transition: 0.3s all ease-out;
 }
 .site-header .site-nav .menu-button svg::after {
-  fill: #ebebeb;
+  fill: #FFFAFA;
 }
 .site-header .site-nav ul {
   margin: 0;
@@ -568,16 +568,16 @@ section {
   height: 335px;
 }
 .project-thumbs img {
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
 }
 .project-thumbs:hover img {
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }

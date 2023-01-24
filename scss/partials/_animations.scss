@@ -6,11 +6,11 @@
     height: 335px;
 
     img {
-        transition: transform .5s ease-in-out;
+        transition: transform .25s ease-in-out;
     }
 
     &:hover img {
-        transition: transform .5s ease-in-out;
+        transition: transform .25s ease-in-out;
         transform: scale(1.2);
     }
 }
