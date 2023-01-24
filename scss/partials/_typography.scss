@@ -9,7 +9,7 @@ body {
     letter-spacing: .1em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .centered{
     font-family: $font-family-serif;
     font-weight: 700;
     font-style: normal;
@@ -43,10 +43,11 @@ body {
     line-height: 1.4;
 }
 
-h1, h2, h3, h4, h5, h6, p {margin: 0 0 .5em 0;}
+h1, h2, h3, h4, h5, h6, p, .centered {margin: 0 0 .5em 0;}
 
 /* TRADITIONAL TYPOGRAPHIC SCALE */
-h1 {
+h1,
+.centered {
     font-size: 3em;
     line-height: 1; 
 }

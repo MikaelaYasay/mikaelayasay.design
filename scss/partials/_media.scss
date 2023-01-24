@@ -12,3 +12,18 @@ img {
     background-repeat: no-repeat;
     background-position: right 0 bottom 0;
 }
+
+/* CONTENT HERO */ 
+.content-hero {
+    margin: 5em 1em 0 1em;
+    overflow: hidden;
+    height: 500px;
+
+    .centered {
+        font-weight: 700;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

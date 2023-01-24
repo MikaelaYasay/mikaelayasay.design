@@ -5,3 +5,17 @@
     left: -9999px;
 
 }
+
+/* SELECTED PAGE */ 
+.nav {
+    .selected {
+        color: $color-link-darker;
+        font-family: $font-family-sans;
+        font-weight: 700;
+    }
+    a {
+        &:hover {
+            color: $color-link-darker;
+        }
+    }
+}
