@@ -1,5 +1,20 @@
 /* ANIMATION */ 
 
+/* PROJECT THUMBNAILS */ 
+.project-thumbs {
+    overflow: hidden;
+    height: 335px;
+
+    img {
+        transition: transform .5s ease-in-out;
+    }
+
+    &:hover img {
+        transition: transform .5s ease-in-out;
+        transform: scale(1.2);
+    }
+}
+
 // SCROLL TRIGGER ANIMATION
 .hero,
 .hero[data-sectionstate="inactive"] {

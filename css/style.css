@@ -562,6 +562,26 @@ section {
 }
 
 /* ANIMATION */
+/* PROJECT THUMBNAILS */
+.project-thumbs {
+  overflow: hidden;
+  height: 335px;
+}
+.project-thumbs img {
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+.project-thumbs:hover img {
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .hero .container *,
 .hero[data-sectionstate=inactive] .container * {
   -webkit-transition: all 1s ease-out;
