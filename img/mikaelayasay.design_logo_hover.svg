@@ -7,8 +7,8 @@
       }
 
       .cls-1, .cls-2, .cls-3 {
-        fill: #353b3c;
-        stroke: #353b3c;
+        fill: #d2b74e;
+        stroke: #d2b74e;
       }
 
       .cls-1, .cls-3 {

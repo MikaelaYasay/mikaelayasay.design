@@ -43,14 +43,18 @@ body {
 
 /* SITE FOOTER */ 
 .site-footer {
-    background-color: black;
+    background-color: $color-link-darker;
     display: flex;
-    padding: 1em;
+    padding: 2em;
     justify-content: center;
 
     a {
-        color: white;
+        color: $color-link;
         text-decoration: none;
+    }
+
+    .footer-nav {
+        display: flex;
     }
 }
 

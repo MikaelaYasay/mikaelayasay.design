@@ -37,3 +37,53 @@
     text-decoration: none;
 }
 
+/* FOOTER SOCIAL ICONS */ 
+.fa {
+    display: grid;
+    padding: 1em;
+    text-align: center;
+    margin: 5px 2px;
+    border-radius: 80%;
+}
+
+.fa-linkedin {
+    padding-left: 1.2em;
+    background-color: $color-white;
+    color: $color-link;
+
+    &:hover {
+        background-color: $color-link;
+        color: $color-link-darker;
+    }
+}
+
+.fa-instagram {
+    padding-left: 1.09em;
+    background-color: $color-white;
+    color: $color-link;
+
+    &:hover {
+        background-color: $color-link;
+        color: $color-link-darker;
+    }
+}
+.fa-github {
+    padding-left: 1.1em;
+    background-color: $color-white;
+    color: $color-link;
+
+    &:hover {
+        background-color: $color-link;
+        color: $color-link-darker;
+    }
+}
+.fa-codepen {
+    padding-left: 1.1em;
+    background-color: $color-white;
+    color: $color-link;
+
+    &:hover {
+        background-color: $color-link;
+        color: $color-link-darker;
+    }
+}

@@ -2,10 +2,14 @@
 
 /* PROJECT THUMBNAILS */ 
 .project-thumbs {
+    position: relative;
     overflow: hidden;
-    height: 335px;
+    width: 100%;
+    height: auto;
 
     img {
+        display: block;
+        width: 100%;
         transition: transform .25s ease-in-out;
     }
 
@@ -14,6 +18,84 @@
         transform: scale(1.2);
     }
 }
+
+.thumb-overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $color-amber;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: transform .3 ease-in-out;
+
+    &:hover {
+        height: 100%;
+    }
+}
+
+.thumb-overlay2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $color-scaled;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: transform .3 ease-in-out;
+
+    &:hover {
+        height: 100%;
+    }
+}
+
+.thumb-overlay3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $color-trilogy;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: transform .3 ease-in-out;
+
+    &:hover {
+        height: 100%;
+    }
+}
+
+.thumb-overlay4 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $color-dubai;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: transform .3 ease-in-out;
+
+    &:hover {
+        height: 100%;
+    }
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-white;
+    text-align: center;
+    font-size: 1em;
+    
+    span {
+      font-weight: 700;
+    }
+  }
 
 // SCROLL TRIGGER ANIMATION
 .hero,
