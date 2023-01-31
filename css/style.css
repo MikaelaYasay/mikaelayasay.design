@@ -704,9 +704,11 @@ section {
   transition: -webkit-transform 0.3 ease-in-out;
   transition: transform 0.3 ease-in-out;
   transition: transform 0.3 ease-in-out, -webkit-transform 0.3 ease-in-out;
+  opacity: 0;
 }
 .thumb-overlay1:hover {
   height: 100%;
+  opacity: 1;
 }
 
 .thumb-overlay2 {
@@ -722,9 +724,11 @@ section {
   transition: -webkit-transform 0.3 ease-in-out;
   transition: transform 0.3 ease-in-out;
   transition: transform 0.3 ease-in-out, -webkit-transform 0.3 ease-in-out;
+  opacity: 0;
 }
 .thumb-overlay2:hover {
   height: 100%;
+  opacity: 1;
 }
 
 .thumb-overlay3 {
@@ -740,9 +744,11 @@ section {
   transition: -webkit-transform 0.3 ease-in-out;
   transition: transform 0.3 ease-in-out;
   transition: transform 0.3 ease-in-out, -webkit-transform 0.3 ease-in-out;
+  opacity: 0;
 }
 .thumb-overlay3:hover {
   height: 100%;
+  opacity: 1;
 }
 
 .thumb-overlay4 {
@@ -758,9 +764,11 @@ section {
   transition: -webkit-transform 0.3 ease-in-out;
   transition: transform 0.3 ease-in-out;
   transition: transform 0.3 ease-in-out, -webkit-transform 0.3 ease-in-out;
+  opacity: 0;
 }
 .thumb-overlay4:hover {
   height: 100%;
+  opacity: 1;
 }
 
 .text {
