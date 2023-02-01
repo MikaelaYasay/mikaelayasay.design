@@ -1,5 +1,3 @@
-var mixer = mixitup('.mixitup-container'); 
-
 // OVERLAY NAV MENU SHOW HIDE
 
 const mymenubutton = document.querySelector('.menu-button');

@@ -46,7 +46,7 @@ body {
     background-color: $color-link-darker;
     display: flex;
     padding: 2em;
-    justify-content: center;
+    justify-content: space-between;
 
     a {
         color: $color-link;
@@ -55,6 +55,81 @@ body {
 
     .footer-nav {
         display: flex;
+
+        ul {
+            display: flex;
+
+            li  {
+                margin-right: 1em;
+                list-style: none;
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint-small) {
+    /* HERO */
+    .hero {
+        display: flex;
+        justify-content: center;
+
+        .input {
+            color: $color-white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .title {
+            display: inline-block;
+            text-align: center;
+
+            h1 {
+                font-size: 3.5em;
+                color: $color-white;
+            }
+        }
+    }
+
+    .about-button {
+        display: flex;
+        justify-content: center;
+
+        a {
+            font-size: 1.5em;
+        }
+    }
+}
+/* MEDIUM TO SMALL SCREENS */ 
+@media (max-width: $breakpoint-medium) {
+    /* FOOTER */ 
+    .site-footer {
+        width: 100%;
+        display: inline-block;
+
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2em;
+
+            ul {
+                display: block;
+                text-align: center;
+            }
+            
+            li {
+                margin: 1em 0 .5em 0;
+            }
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+
+            a {
+                margin-left: 1em;
+                margin-right: 1em;
+            }
+        }
     }
 }
 
