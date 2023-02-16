@@ -376,6 +376,31 @@ body {
   padding: 0 1em;
 }
 
+.containersection {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+.containersection img {
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  top: 0;
+  left: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 /* HERO CONTAINER */
 .hero-cont {
   margin: 0;
@@ -541,8 +566,10 @@ body {
 }
 
 /* PROJECTS PAGE */
+/* AMBER AYRE */
+/* DESCRIPTIONS */
 .headline {
-  margin: 5em 1.5em 0 1.5em;
+  margin: 3em 1.5em 0 1.5em;
   font-size: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -587,7 +614,7 @@ body {
   text-align: left;
 }
 .project_desc .project_about p {
-  font-size: 1.5em;
+  font-size: 1.8em;
   max-width: 1000px;
 }
 
@@ -599,8 +626,69 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
+.project_info ul {
+  padding: 0;
+}
 .project_info ul li {
   list-style: none;
+}
+
+/* MOCKUPS SECTION */
+.mock_title {
+  margin: 0;
+  font-size: 6em;
+}
+
+.mockup_section {
+  margin: 5em 5em 2em 5em;
+}
+.mockup_section .section_title {
+  margin: 0 0 5em 0;
+}
+.mockup_section .section_title h2 {
+  margin: 0;
+  color: rgba(210, 184, 78, 0.7529411765);
+}
+.mockup_section h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2em 0 2em 0;
+  font-size: 4em;
+}
+.mockup_section .schematics_img {
+  margin: 1.5em 0 1.5em 0;
+}
+.mockup_section .schematic_desc {
+  font-size: 1.5em;
+}
+.mockup_section .amberayre_logo {
+  border: 2px solid rgba(210, 184, 78, 0.7529411765);
+}
+.mockup_section .amberayre_logo .logo {
+  margin-top: 5em;
+}
+.mockup_section .amberayre_logo .logo_desc {
+  background-color: rgba(210, 184, 78, 0.7529411765);
+  border-radius: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2em;
+  margin: 1em;
+}
+.mockup_section .amberayre_logo .logo_desc h2 {
+  margin: 0 1em 0 1em;
+  color: #FFFAFA;
+}
+.mockup_section .amberayre_logo .logo_desc p {
+  margin: 0 1em 0 1em;
 }
 
 /* SITE FOOTER */
@@ -664,6 +752,12 @@ body {
 
 /* LARGE SCREENS */
 @media (max-width: 1250px) {
+  /* SECTION TITLES */
+  .mock_title {
+    margin: 0;
+    font-size: 6em;
+  }
+
   /* HERO TEXT */
   .banner {
     display: -webkit-box;
@@ -724,6 +818,12 @@ body {
 }
 /* MEDIUM SCREENS */
 @media (max-width: 1050px) {
+  /* SECTION TITLES */
+  .mock_title {
+    margin: 0;
+    font-size: 4em;
+  }
+
   /* HERO TEXT */
   .banner {
     display: -webkit-box;
@@ -784,6 +884,12 @@ body {
 }
 /* SMALL SCREENS */
 @media (max-width: 768px) {
+  /* SECTION TITLES */
+  .mock_title {
+    margin: 0;
+    font-size: 2em;
+  }
+
   /* HERO TEXT */
   .banner {
     display: -webkit-box;
@@ -876,6 +982,44 @@ body {
 section {
   padding: 4em 0;
   min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+sectionlarge {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+sectionlarge h1 {
+  position: relative;
+}
+sectionlarge img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section1 {
+  background-color: rgba(210, 184, 78, 0.7529411765);
+  min-height: 30vh;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;

@@ -43,8 +43,11 @@ body {
 } 
 
 /* PROJECTS PAGE */ 
+/* AMBER AYRE */ 
+
+/* DESCRIPTIONS */ 
 .headline {
-    margin: 5em 1.5em 0 1.5em;
+    margin: 3em 1.5em 0 1.5em;
     font-size: 2em;
     display: flex;
     justify-content: flex-start;
@@ -77,7 +80,7 @@ body {
     .project_about {
         text-align: left;
         p {
-            font-size: 1.5em;
+            font-size: 1.8em;
             max-width: 1000px;
         }
 
@@ -89,10 +92,72 @@ body {
     justify-content: flex-start;
 
     ul {
+        padding: 0;
         li {
             list-style: none;
         }
     }
+}
+ 
+/* MOCKUPS SECTION */ 
+.mock_title {
+    margin: 0;
+    font-size: 6em;
+}
+
+.mockup_section {
+    margin: 5em 5em 2em 5em;
+    .section_title {
+        margin: 0 0 5em 0;
+
+        h2 {
+            margin: 0;
+            color: $color-amber;
+        }
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        margin: 2em 0 2em 0;
+        font-size: 4em;
+    }
+
+    .schematics_img {
+        margin: 1.5em 0 1.5em 0;
+    }
+
+    .schematic_desc {
+        font-size: 1.5em;
+    }
+
+    .amberayre_logo {
+        border: 2px solid $color-amber;
+
+        .logo {
+            margin-top: 5em;
+        }
+
+        .logo_desc {
+            background-color: $color-amber;
+            border-radius: 1em;
+            display: flex;
+            justify-content: center;
+            padding: 2em;
+            margin: 1em;
+
+            h2 {
+                margin: 0 1em 0 1em;
+                color: $color-white;
+            }
+
+            p {
+                margin: 0 1em 0 1em;
+            }
+        }
+
+    }
+    
 }
 
 /* SITE FOOTER */ 
@@ -148,6 +213,12 @@ body {
 
 /* LARGE SCREENS */
 @media (max-width: $breakpoint-large) { 
+    /* SECTION TITLES */ 
+    .mock_title {
+        margin: 0;
+        font-size: 6em;
+    }
+
     /* HERO TEXT */ 
     .banner {
         display: flex;
@@ -197,6 +268,12 @@ body {
 
 /* MEDIUM SCREENS */
 @media (max-width: $breakpoint-medium) { 
+    /* SECTION TITLES */ 
+    .mock_title {
+        margin: 0;
+        font-size: 4em;
+    }
+
     /* HERO TEXT */ 
     .banner {
         display: flex;
@@ -246,6 +323,12 @@ body {
 
 /* SMALL SCREENS */
 @media (max-width: $breakpoint-small) { 
+    /* SECTION TITLES */ 
+    .mock_title {
+        margin: 0;
+        font-size: 2em;
+    }
+
     /* HERO TEXT */ 
     .banner {
         display: flex;
@@ -330,6 +413,36 @@ body {
 section {
     padding: 4em 0;
     min-height: 100vh;
+    display: grid;
+    align-items: center;
+}
+
+sectionlarge {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        position: relative;
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+section1 {
+    background-color: $color-amber;
+    min-height: 30vh;
     display: grid;
     align-items: center;
 }
